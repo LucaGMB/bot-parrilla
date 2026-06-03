@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "node index.js --dev",
     "lint": "eslint .",
     "test": "node --test src/**/*.test.js"
   },

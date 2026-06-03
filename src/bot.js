@@ -146,11 +146,14 @@ function handleInput(input) {
 }
 
 function start() {
+  const devMode = process.argv.includes("--dev");
+
   print("\n" + "═".repeat(50));
   print("    🔥  LA PARRILLA DEL BARRIO — BOT DE PEDIDOS  🔥");
   print("═".repeat(50));
+  if (devMode) print("  ⚠️  [modo desarrollo — chequeo de horario desactivado]\n");
 
-  if (!isOpen()) {
+  if (!devMode && !isOpen()) {
     bot(
       "¡Hola! Por ahora estamos cerrados.\n\n  " +
         getScheduleMessage()
