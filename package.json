@@ -1,0 +1,28 @@
+{
+  "name": "bot-parrilla",
+  "version": "1.0.0",
+  "description": "Bot de pedidos para parrilla argentina — interfaz de consola interactiva en Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "test": "node --test src/**/*.test.js"
+  },
+  "keywords": [
+    "bot",
+    "parrilla",
+    "argentina",
+    "pedidos",
+    "cli",
+    "nodejs",
+    "readline"
+  ],
+  "author": "LucaGMB",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}
